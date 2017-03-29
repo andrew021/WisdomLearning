@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="StudyRemindCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到可获得10金币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-4E-2JA">
+                        <rect key="frame" x="10" y="10" width="121" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eRY-Mo-uwD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inh-No-uB3">
+                        <rect key="frame" x="260" y="15" width="50" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="gJ4-ft-iQQ"/>
+                        </constraints>
+                        <state key="normal" title="签到"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈佛微蜂窝和为各位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ak-PD-3K2">
+                        <rect key="frame" x="10" y="30" width="126" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="eJa-Wh-YPr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Inh-No-uB3" secondAttribute="trailing" constant="10" id="03H-Sm-OEL"/>
+                    <constraint firstAttribute="bottom" secondItem="Inh-No-uB3" secondAttribute="bottom" constant="15" id="1zd-Am-WQC"/>
+                    <constraint firstItem="0ak-PD-3K2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Csx-O9-Ybq"/>
+                    <constraint firstItem="0ak-PD-3K2" firstAttribute="top" secondItem="kkW-4E-2JA" secondAttribute="bottom" id="ObT-zZ-vDf"/>
+                    <constraint firstItem="Inh-No-uB3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="U6C-Hp-d9k"/>
+                    <constraint firstItem="kkW-4E-2JA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="loh-Wo-0s8"/>
+                    <constraint firstItem="kkW-4E-2JA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="muu-FO-hqF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clickBtn" destination="Inh-No-uB3" id="0lE-hp-uO7"/>
+                <outlet property="contentLabel" destination="0ak-PD-3K2" id="UQu-h9-9OD"/>
+                <outlet property="titleLabel" destination="kkW-4E-2JA" id="JZV-0D-Lqa"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="348"/>
+        </tableViewCell>
+    </objects>
+</document>

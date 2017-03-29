@@ -1,0 +1,84 @@
+//
+//  WisdomLearning-Prefix.pch
+//  WisdomLearning
+//
+//  Created by hfcb001 on 16/9/30.
+//  Copyright © 2016年 hfcb001. All rights reserved.
+//
+
+#ifndef WisdomLearning_Prefix_pch
+#define WisdomLearning_Prefix_pch
+
+#ifdef __OBJC__
+#import <Colours/Colours.h>
+#import <Masonry/Masonry.h>
+#import <SVPullToRefresh/SVPullToRefresh.h>
+#import "UIScrollView+EmptyDataSet.h"
+#import "UIColor+YYAdd.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "Macro.h"
+#import "SystemMacro.h"
+#import "Config.h"
+#import "UIViewController+HUD.h"
+#import "Tool.h"
+#import "ZOTools.h"
+#import "UIViewController+Request.h"
+#import "EMSDK.h"
+#import "EaseUI.h"
+#import "GetHeight.h"
+#import "ZSShare.h"
+#import "AppDelegate.h"
+#import "KLCPopup.h"
+#import "UIViewController+PagesControl.h"
+#import "SearchViewController.h"
+#import "ZSRequest+LearnCircle.h"
+#import "ZSRequest+Categories.h"
+#import "ZSRequest+Discover.h"
+#import "ZSRequest+Comment.h"
+#import "ZSRequest+Study.h"
+#import "ZSRequest+Mine.h"
+#import "ZSRequest+LightAPP.h"
+#import "ZSRequest+LoginInfo.h"
+#import "NSString+Category.h"
+#import "ZSRequest+IndividualHomepage.h"
+#import "IMRequest+Message.h"
+#import "AliPayManager.h"
+#import "WXApiManager.h"
+#import "ZSRequest+Pay.h"
+#import "UnionPayManager.h"
+#import "UPPaymentControl.h"
+#import "ZSPay.h"
+#import "SideslipSingle.h"
+#import "CommonDelegate.h"
+#import "ContactsManager.h"
+#import "GetImageUrl.h"
+#import "UIHelper.h"
+#import "IMRequest.h"
+#import "GroupsManager.h"
+#import "CellLongPressDelegate.h"
+#import "ThemeInsteadTool.h"
+#import "NSString+Category.h"
+#import "TypeManager.h"
+#import "Offset.h"
+#import "UIViewController+LoadLoginView.h"
+
+extern NSString *gIconHost;
+extern NSString *indexfunc;
+extern NSString *centerfunc;
+extern NSString *regfunc;
+extern NSString *outscanewm;
+
+#define KScreenW [[UIScreen mainScreen]bounds].size.width
+#define KScreenH [[UIScreen mainScreen]bounds].size.height
+#define LBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LBRandomColor LBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+#define NAVH 64.0
+#import "UIView+Frame.h"
+#import "UIColor+Expanded.h"
+#import "LxButton.h"
+#import "UILabel+LXLabel.h"
+#import "ZSRequest+Study.h"
+#endif
+
+#endif /* WisdomLearning_Prefix_pch */

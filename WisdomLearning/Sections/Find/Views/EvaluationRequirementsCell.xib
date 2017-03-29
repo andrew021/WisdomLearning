@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="evaluationRequirementsCell" rowHeight="60" id="KGk-i7-Jjw" customClass="EvaluationRequirementsCell">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标准：学满100分钟，满分可获得60分" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-ge-Hq0">
+                        <rect key="frame" x="55" y="31" width="365" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程学习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K01-7Z-W2Z">
+                        <rect key="frame" x="55" y="8" width="56" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DIa-AV-W4l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offline_test" translatesAutoresizingMaskIntoConstraints="NO" id="dTP-sJ-6Qo">
+                        <rect key="frame" x="15" y="15" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="9Vb-4E-meO"/>
+                            <constraint firstAttribute="height" constant="30" id="Qvp-hI-AEO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得学分：100分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHC-9f-Emx">
+                        <rect key="frame" x="312" y="8" width="108" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hrx-qp-Zpy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dTP-sJ-6Qo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1AS-Oa-2Dc"/>
+                    <constraint firstItem="K01-7Z-W2Z" firstAttribute="leading" secondItem="dTP-sJ-6Qo" secondAttribute="trailing" constant="10" id="3zc-2I-j0y"/>
+                    <constraint firstItem="K01-7Z-W2Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="BzN-bJ-h9S"/>
+                    <constraint firstAttribute="trailing" secondItem="FmO-ge-Hq0" secondAttribute="trailing" constant="10" id="Cqp-W5-XlH"/>
+                    <constraint firstItem="FmO-ge-Hq0" firstAttribute="leading" secondItem="dTP-sJ-6Qo" secondAttribute="trailing" constant="10" id="EvF-2R-H5r"/>
+                    <constraint firstItem="fHC-9f-Emx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="an1-jj-kvE"/>
+                    <constraint firstAttribute="bottom" secondItem="FmO-ge-Hq0" secondAttribute="bottom" constant="7" id="gCL-0M-bed"/>
+                    <constraint firstItem="dTP-sJ-6Qo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="koR-lC-SSf"/>
+                    <constraint firstItem="FmO-ge-Hq0" firstAttribute="top" secondItem="fHC-9f-Emx" secondAttribute="bottom" constant="2" id="ocM-gq-o9R"/>
+                    <constraint firstAttribute="trailing" secondItem="fHC-9f-Emx" secondAttribute="trailing" constant="10" id="slh-6E-aRy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="couresLabel" destination="fHC-9f-Emx" id="QqS-LB-0of"/>
+                <outlet property="headerImage" destination="dTP-sJ-6Qo" id="xgG-9X-jVA"/>
+                <outlet property="standLabel" destination="FmO-ge-Hq0" id="ECr-f0-34N"/>
+                <outlet property="titleLabel" destination="K01-7Z-W2Z" id="Yg3-JI-fb8"/>
+            </connections>
+            <point key="canvasLocation" x="354" y="393"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="offline_test" width="100" height="100"/>
+    </resources>
+</document>

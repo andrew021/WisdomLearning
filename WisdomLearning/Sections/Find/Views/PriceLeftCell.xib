@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PriceLeftCell">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtA-7h-33p">
+                        <rect key="frame" x="30" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.86362532380000001" green="0.86362532380000001" blue="0.86362532380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Nen-r3-qom"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUA-Gt-yCc">
+                        <rect key="frame" x="10" y="5" width="330" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="vXd-N5-jR1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vXd-N5-jR1"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrows_gray" translatesAutoresizingMaskIntoConstraints="NO" id="HfE-B8-qUN">
+                        <rect key="frame" x="340" y="18" width="6" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="Onq-Lp-xqg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="HfE-B8-qUN" secondAttribute="bottom" constant="18" id="D6Z-Et-rX1"/>
+                    <constraint firstAttribute="trailing" secondItem="kUA-Gt-yCc" secondAttribute="trailing" constant="40" id="H7u-05-8OZ"/>
+                    <constraint firstItem="HfE-B8-qUN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Uh3-ox-DH1"/>
+                    <constraint firstItem="AtA-7h-33p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="YJX-5V-RLe"/>
+                    <constraint firstItem="kUA-Gt-yCc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cwy-mm-b1P"/>
+                    <constraint firstAttribute="bottom" secondItem="kUA-Gt-yCc" secondAttribute="bottom" constant="5" id="e06-gt-jnG"/>
+                    <constraint firstAttribute="trailing" secondItem="AtA-7h-33p" secondAttribute="trailing" constant="30" id="gjt-8T-Z5a"/>
+                    <constraint firstItem="kUA-Gt-yCc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="r58-pU-N8u"/>
+                    <constraint firstAttribute="bottom" secondItem="AtA-7h-33p" secondAttribute="bottom" id="zgl-Kh-Bq5"/>
+                    <constraint firstItem="HfE-B8-qUN" firstAttribute="leading" secondItem="kUA-Gt-yCc" secondAttribute="trailing" id="zyA-BH-Ni0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowsImage" destination="HfE-B8-qUN" id="pOf-ZC-Ckl"/>
+                <outlet property="lineView" destination="AtA-7h-33p" id="yoO-6e-T43"/>
+                <outlet property="titleBtn" destination="kUA-Gt-yCc" id="X64-Ae-oIK"/>
+            </connections>
+            <point key="canvasLocation" x="169" y="152"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrows_gray" width="6" height="8"/>
+    </resources>
+</document>

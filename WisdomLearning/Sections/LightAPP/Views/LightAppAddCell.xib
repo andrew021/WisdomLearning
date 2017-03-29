@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="LightAppAddCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="YIC-pQ-Z2n">
+                        <rect key="frame" x="10" y="10" width="40" height="49"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="JRg-99-H9b"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSd-Mt-Drd">
+                        <rect key="frame" x="250" y="15" width="60" height="39"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="lq8-Ps-Nb6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seO-UJ-HAx">
+                        <rect key="frame" x="60" y="10" width="190" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="KYL-aa-Fdg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海量课程等待你" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1t-kF-pf6">
+                        <rect key="frame" x="60" y="31" width="190" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="eXj-EI-MK0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.605914022" green="0.605914022" blue="0.605914022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="LSd-Mt-Drd" secondAttribute="bottom" constant="15" id="4dS-I5-d5z"/>
+                    <constraint firstItem="R1t-kF-pf6" firstAttribute="top" secondItem="seO-UJ-HAx" secondAttribute="bottom" id="GCw-5J-7ak"/>
+                    <constraint firstAttribute="trailing" secondItem="LSd-Mt-Drd" secondAttribute="trailing" constant="10" id="HOD-Ky-cPa"/>
+                    <constraint firstItem="LSd-Mt-Drd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ium-MW-H9D"/>
+                    <constraint firstItem="R1t-kF-pf6" firstAttribute="leading" secondItem="YIC-pQ-Z2n" secondAttribute="trailing" constant="10" id="KqX-HO-6Q4"/>
+                    <constraint firstItem="seO-UJ-HAx" firstAttribute="leading" secondItem="YIC-pQ-Z2n" secondAttribute="trailing" constant="10" id="MNf-gT-Edi"/>
+                    <constraint firstItem="LSd-Mt-Drd" firstAttribute="leading" secondItem="seO-UJ-HAx" secondAttribute="trailing" id="QW4-yE-ml5"/>
+                    <constraint firstItem="YIC-pQ-Z2n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Zez-g6-vSg"/>
+                    <constraint firstItem="LSd-Mt-Drd" firstAttribute="leading" secondItem="R1t-kF-pf6" secondAttribute="trailing" id="gEj-m9-gO0"/>
+                    <constraint firstItem="YIC-pQ-Z2n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ppI-UU-C5B"/>
+                    <constraint firstAttribute="bottom" secondItem="YIC-pQ-Z2n" secondAttribute="bottom" constant="10" id="sYw-GD-SOp"/>
+                    <constraint firstItem="seO-UJ-HAx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zri-gh-aOu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="addBtn" destination="LSd-Mt-Drd" id="6br-bo-be8"/>
+                <outlet property="contentLabel" destination="R1t-kF-pf6" id="JTg-ll-GmS"/>
+                <outlet property="iconImage" destination="YIC-pQ-Z2n" id="hCR-ml-wM1"/>
+                <outlet property="titleLabel" destination="seO-UJ-HAx" id="wey-NK-OSz"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="328.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="120" height="120"/>
+    </resources>
+</document>

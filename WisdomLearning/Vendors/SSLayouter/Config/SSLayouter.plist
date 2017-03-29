@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultTextColor</key>
+	<string></string>
+	<key>DefaultLinkHighlightColor</key>
+	<string></string>
+	<key>DefaultLinkColor</key>
+	<string></string>
+	<key>DefaultFontFamily</key>
+	<string></string>
+	<key>DefaultFontName</key>
+	<string></string>
+	<key>DefaultFontSize</key>
+	<integer>16</integer>
+	<key>DefaultLineHeightMultiplier</key>
+	<real>1.5</real>
+	<key>DefaultFirstLineHeadIndent</key>
+	<integer>30</integer>
+	<key>DefaultLeadingRatio</key>
+	<real>0.5</real>
+	<key>DefaultMarginBottom</key>
+	<integer>10</integer>
+	<key>DefaultMarginTop</key>
+	<integer>10</integer>
+	<key>DefaultMarginRight</key>
+	<integer>20</integer>
+	<key>DefaultMarginLeft</key>
+	<integer>20</integer>
+	<key>DefaultKerning</key>
+	<real>0.08</real>
+</dict>
+</plist>

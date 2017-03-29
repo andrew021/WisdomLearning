@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClickLoginCell" rowHeight="118" id="KGk-i7-Jjw" customClass="ClickLoginCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnI-0Y-loB">
+                        <rect key="frame" x="28" y="28" width="264" height="40"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="sLy-MF-Z1G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="登  录">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N26-Wf-ORB">
+                        <rect key="frame" x="28" y="73" width="55" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="1gd-TN-70U"/>
+                            <constraint firstAttribute="width" constant="55" id="idZ-K8-2bw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="注册">
+                            <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyL-bF-EcD">
+                        <rect key="frame" x="218" y="73" width="74" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74" id="bKz-y4-bBr"/>
+                            <constraint firstAttribute="height" constant="20" id="plA-po-XX6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="忘记密码">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="plA-po-XX6"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="N26-Wf-ORB" firstAttribute="leading" secondItem="rnI-0Y-loB" secondAttribute="leading" id="0iV-33-3cq"/>
+                    <constraint firstItem="rnI-0Y-loB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="3QJ-XW-3yV"/>
+                    <constraint firstItem="rnI-0Y-loB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MZ9-FW-fdK"/>
+                    <constraint firstItem="N26-Wf-ORB" firstAttribute="top" secondItem="rnI-0Y-loB" secondAttribute="bottom" constant="5" id="OqE-3X-ds4"/>
+                    <constraint firstItem="dyL-bF-EcD" firstAttribute="trailing" secondItem="rnI-0Y-loB" secondAttribute="trailing" id="Pb3-ct-UzQ"/>
+                    <constraint firstItem="dyL-bF-EcD" firstAttribute="top" secondItem="rnI-0Y-loB" secondAttribute="bottom" constant="5" id="S9o-hE-KRa"/>
+                    <constraint firstItem="rnI-0Y-loB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="eEb-ws-OfB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rnI-0Y-loB" secondAttribute="trailing" constant="20" id="sOe-8p-P2g"/>
+                    <constraint firstItem="dyL-bF-EcD" firstAttribute="height" secondItem="N26-Wf-ORB" secondAttribute="height" id="wAo-eQ-Yr7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="forgetPwdButton" destination="dyL-bF-EcD" id="HeG-Pd-Cd0"/>
+                <outlet property="loginButton" destination="rnI-0Y-loB" id="wet-K2-6BO"/>
+                <outlet property="registerButton" destination="N26-Wf-ORB" id="aMJ-8u-IwG"/>
+            </connections>
+            <point key="canvasLocation" x="223" y="302"/>
+        </tableViewCell>
+    </objects>
+</document>

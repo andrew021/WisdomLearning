@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InputPhoneTextCell" id="KGk-i7-Jjw" customClass="InputPhoneTextCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdk-MD-1A3">
+                        <rect key="frame" x="18" y="8" width="272" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fdk-MD-1A3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QPM-7C-eeI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fdk-MD-1A3" secondAttribute="bottom" id="ZEY-FB-ukE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fdk-MD-1A3" secondAttribute="trailing" constant="22" id="aoa-4Q-v7i"/>
+                    <constraint firstItem="fdk-MD-1A3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="cju-qc-aSY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneTextfield" destination="fdk-MD-1A3" id="0FR-iq-Jbx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

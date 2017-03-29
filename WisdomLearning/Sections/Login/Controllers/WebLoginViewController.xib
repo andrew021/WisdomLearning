@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebLoginViewController">
+            <connections>
+                <outlet property="cancelButton" destination="TMA-V9-mLi" id="Tcj-z9-gkx"/>
+                <outlet property="sureButton" destination="b1E-Co-zx2" id="btr-aa-40L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-Co-zx2">
+                    <rect key="frame" x="20" y="262" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="g0S-qZ-IJ1"/>
+                    </constraints>
+                    <state key="normal" title="确认登录">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sureButtonClicked:" destination="-1" eventType="touchUpInside" id="esV-KB-nt8"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webloginBg" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-Xk-bXr">
+                    <rect key="frame" x="88" y="40" width="200" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="dsm-R3-5gj"/>
+                        <constraint firstAttribute="width" constant="200" id="ruw-2j-2eu"/>
+                        <constraint firstAttribute="height" constant="100" id="yAB-jP-N2n"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dsm-R3-5gj"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即将在电脑上登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXT-vl-mbM">
+                    <rect key="frame" x="0.0" y="160" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Gvq-4z-sp0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确认是否是本人操作" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsx-6W-Ic9">
+                    <rect key="frame" x="0.0" y="191" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="btA-Rf-nLA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMA-V9-mLi">
+                    <rect key="frame" x="20" y="327" width="335" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Zvb-vw-RsO"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClicked:" destination="-1" eventType="touchUpInside" id="1tn-tI-EgR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="b1E-Co-zx2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4ga-hA-bXI"/>
+                <constraint firstItem="iAw-Xk-bXr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="BAd-QO-fkK"/>
+                <constraint firstAttribute="trailing" secondItem="iAw-Xk-bXr" secondAttribute="trailing" constant="50" id="DAn-nV-iAR"/>
+                <constraint firstItem="b1E-Co-zx2" firstAttribute="top" secondItem="vsx-6W-Ic9" secondAttribute="bottom" constant="50" id="EeO-ti-dfU"/>
+                <constraint firstItem="iAw-Xk-bXr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="LsI-EU-9yM"/>
+                <constraint firstAttribute="trailing" secondItem="b1E-Co-zx2" secondAttribute="trailing" constant="20" id="SiA-kk-uDq"/>
+                <constraint firstItem="vsx-6W-Ic9" firstAttribute="top" secondItem="eXT-vl-mbM" secondAttribute="bottom" constant="10" id="XDH-Xg-2gZ"/>
+                <constraint firstItem="TMA-V9-mLi" firstAttribute="top" secondItem="b1E-Co-zx2" secondAttribute="bottom" constant="20" id="dO5-2h-IHr"/>
+                <constraint firstItem="eXT-vl-mbM" firstAttribute="top" secondItem="iAw-Xk-bXr" secondAttribute="bottom" constant="20" id="gnS-Bs-bfv"/>
+                <constraint firstItem="vsx-6W-Ic9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hba-41-2OD"/>
+                <constraint firstAttribute="trailing" secondItem="TMA-V9-mLi" secondAttribute="trailing" constant="20" id="jEU-ZN-Mb8"/>
+                <constraint firstItem="iAw-Xk-bXr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kWu-VS-r6O"/>
+                <constraint firstItem="iAw-Xk-bXr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="mRK-W4-LCP"/>
+                <constraint firstAttribute="trailing" secondItem="vsx-6W-Ic9" secondAttribute="trailing" id="oVU-aQ-g5i"/>
+                <constraint firstItem="TMA-V9-mLi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qyV-6G-T1E"/>
+                <constraint firstAttribute="trailing" secondItem="eXT-vl-mbM" secondAttribute="trailing" id="rei-tZ-98Y"/>
+                <constraint firstItem="eXT-vl-mbM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vEu-Mu-hlS"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="DAn-nV-iAR"/>
+                    <exclude reference="LsI-EU-9yM"/>
+                    <exclude reference="mRK-W4-LCP"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="243.5" y="279.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="webloginBg" width="240" height="140"/>
+    </resources>
+</document>

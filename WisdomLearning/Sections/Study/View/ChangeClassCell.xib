@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="changeClassCell" rowHeight="113" id="KGk-i7-Jjw" customClass="ChangeClassCell">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YX1-1U-Yea">
+                        <rect key="frame" x="10" y="0.0" width="353" height="87"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-Ke-Y3g">
+                                <rect key="frame" x="318" y="31" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="FCd-IC-LfD"/>
+                                    <constraint firstAttribute="width" constant="25" id="xk5-xL-A7L"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="blue_circle"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="just_net" translatesAutoresizingMaskIntoConstraints="NO" id="mJN-Nx-1B5">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="EKi-r8-CMW"/>
+                                    <constraint firstAttribute="width" constant="60" id="ZMp-ai-3b2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报名时间：2016-06-01 至 2016-07-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqo-yv-iVJ">
+                                <rect key="frame" x="10" y="57" width="298" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cik-QD-Jbb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016高二暑期课程辅导一班" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-vO-qAd">
+                                <rect key="frame" x="10" y="30" width="298" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Itj-0X-dof"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FOm-Ke-Y3g" firstAttribute="centerY" secondItem="YX1-1U-Yea" secondAttribute="centerY" id="0Pt-y9-7W4"/>
+                            <constraint firstItem="R4t-vO-qAd" firstAttribute="top" secondItem="mJN-Nx-1B5" secondAttribute="bottom" constant="10" id="88s-wn-pkX"/>
+                            <constraint firstItem="mJN-Nx-1B5" firstAttribute="top" secondItem="YX1-1U-Yea" secondAttribute="top" id="VMI-Kk-uXf"/>
+                            <constraint firstItem="R4t-vO-qAd" firstAttribute="leading" secondItem="YX1-1U-Yea" secondAttribute="leading" constant="10" id="b6A-bB-md3"/>
+                            <constraint firstItem="yqo-yv-iVJ" firstAttribute="leading" secondItem="YX1-1U-Yea" secondAttribute="leading" constant="10" id="fYP-rw-IfX"/>
+                            <constraint firstAttribute="bottom" secondItem="yqo-yv-iVJ" secondAttribute="bottom" constant="10" id="mjm-6O-DvP"/>
+                            <constraint firstItem="mJN-Nx-1B5" firstAttribute="leading" secondItem="YX1-1U-Yea" secondAttribute="leading" id="qsq-oI-QLh"/>
+                            <constraint firstAttribute="trailing" secondItem="FOm-Ke-Y3g" secondAttribute="trailing" constant="10" id="sGG-2k-Q2g"/>
+                            <constraint firstItem="FOm-Ke-Y3g" firstAttribute="leading" secondItem="yqo-yv-iVJ" secondAttribute="trailing" constant="10" id="whl-Ic-7h1"/>
+                            <constraint firstItem="FOm-Ke-Y3g" firstAttribute="leading" secondItem="R4t-vO-qAd" secondAttribute="trailing" constant="10" id="wtC-xq-0hJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YX1-1U-Yea" secondAttribute="bottom" id="Wnh-LN-GA8"/>
+                    <constraint firstItem="YX1-1U-Yea" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Zdq-hh-XBq"/>
+                    <constraint firstItem="YX1-1U-Yea" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mKD-cq-7t2"/>
+                    <constraint firstAttribute="trailing" secondItem="YX1-1U-Yea" secondAttribute="trailing" constant="10" id="qh0-Fm-1a1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="YX1-1U-Yea" id="H8i-eg-FYu"/>
+                <outlet property="clickButton" destination="FOm-Ke-Y3g" id="e4X-vs-PeS"/>
+                <outlet property="contentLabel" destination="yqo-yv-iVJ" id="0sF-6U-8sD"/>
+                <outlet property="statusImage" destination="mJN-Nx-1B5" id="HfL-xf-ygt"/>
+                <outlet property="titleLabel" destination="R4t-vO-qAd" id="Kn3-B5-TTd"/>
+            </connections>
+            <point key="canvasLocation" x="289.5" y="398"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blue_circle" width="41" height="41"/>
+        <image name="just_net" width="43" height="15"/>
+    </resources>
+</document>

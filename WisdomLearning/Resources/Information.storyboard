@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0hy-6m-hsp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Msg Manage View Controller-->
+        <scene sceneID="fR2-Oq-nCl">
+            <objects>
+                <viewController id="95Z-bK-vPh" customClass="MsgManageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d0Z-wf-ucF"/>
+                        <viewControllerLayoutGuide type="bottom" id="hHd-yw-G2g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0UL-Qq-sRb">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hWd-uP-Sdo">
+                        <barButtonItem key="leftBarButtonItem" image="personal_hearImage" id="Dnz-0a-f6w">
+                            <connections>
+                                <action selector="leftBtnClick:" destination="95Z-bK-vPh" id="BBd-e9-dbi"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="address_list" id="Uce-t6-8tD">
+                                <connections>
+                                    <action selector="rightBtnClick:" destination="95Z-bK-vPh" id="4be-pQ-Ubj"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="search" id="hJ9-KF-68w">
+                                <connections>
+                                    <action selector="searchGroupAndFriend:" destination="95Z-bK-vPh" id="nfj-ab-Tq6"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="seachBarBtn" destination="hJ9-KF-68w" id="G1R-4e-qFv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buP-MG-p9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="381"/>
+        </scene>
+        <!--My Navigation Controller-->
+        <scene sceneID="cS3-sy-Vjg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0hy-6m-hsp" customClass="MyNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7u8-lW-lML">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="95Z-bK-vPh" kind="relationship" relationship="rootViewController" id="COR-L0-AE4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qaz-Gi-ncM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="381"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="address_list" width="20" height="16"/>
+        <image name="personal_hearImage" width="20" height="20"/>
+        <image name="search" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SortCell" id="KGk-i7-Jjw" customClass="SortCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVc-NA-Cmk">
+                        <rect key="frame" x="18" y="12" width="87" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="YMY-PP-YKQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq1-jB-jqk">
+                        <rect key="frame" x="100" y="14" width="10" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="LTP-6A-ytm"/>
+                            <constraint firstAttribute="width" constant="10" id="No2-y3-6DN"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="arrows_gray">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mVc-NA-Cmk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="71T-mD-EG7"/>
+                    <constraint firstItem="mVc-NA-Cmk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="93k-9H-22m"/>
+                    <constraint firstItem="mVc-NA-Cmk" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="9O2-fr-dXx"/>
+                    <constraint firstItem="Kq1-jB-jqk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DJK-Vq-yOi"/>
+                    <constraint firstItem="Kq1-jB-jqk" firstAttribute="leading" secondItem="mVc-NA-Cmk" secondAttribute="trailing" constant="-5" id="WUp-0q-VeB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="sortButton" destination="Kq1-jB-jqk" id="Kah-tw-Eep"/>
+                <outlet property="titleLabel" destination="mVc-NA-Cmk" id="9it-AS-w1i"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="317"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrows_gray" width="6" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="EducationalHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深改组成离千日" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGO-35-i00">
+                        <rect key="frame" x="60" y="5" width="250" height="56"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="study_headlines" translatesAutoresizingMaskIntoConstraints="NO" id="WPV-wm-Vm8">
+                        <rect key="frame" x="10" y="5" width="40" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="BzP-Tt-8uO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aGO-35-i00" secondAttribute="bottom" constant="5" id="0e8-TB-rNz"/>
+                    <constraint firstAttribute="trailing" secondItem="aGO-35-i00" secondAttribute="trailing" constant="10" id="4Cg-9q-jFB"/>
+                    <constraint firstItem="aGO-35-i00" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5Mi-AO-fJ2"/>
+                    <constraint firstItem="aGO-35-i00" firstAttribute="leading" secondItem="WPV-wm-Vm8" secondAttribute="trailing" constant="10" id="5sU-AC-Igc"/>
+                    <constraint firstItem="WPV-wm-Vm8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DSN-Rt-1Rf"/>
+                    <constraint firstItem="WPV-wm-Vm8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="KRr-bs-yzw"/>
+                    <constraint firstAttribute="bottom" secondItem="WPV-wm-Vm8" secondAttribute="bottom" constant="5" id="Vsr-Ez-YSU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleIv" destination="WPV-wm-Vm8" id="YXt-oZ-ltp"/>
+                <outlet property="titleLabel" destination="aGO-35-i00" id="RTq-eE-c6f"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="326.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="study_headlines" width="120" height="120"/>
+    </resources>
+</document>

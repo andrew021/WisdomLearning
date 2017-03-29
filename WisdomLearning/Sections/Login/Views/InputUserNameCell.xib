@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userNameIdentity" id="KGk-i7-Jjw" customClass="InputUserNameCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="5P4-Qm-NXl">
+                        <rect key="frame" x="33" y="9" width="15" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="WS0-rV-xEw"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号/用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZD-GS-W68">
+                        <rect key="frame" x="63" y="7" width="204" height="30"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiB-J9-3qO">
+                        <rect key="frame" x="272" y="18" width="20" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="FlE-Fq-62H"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="scan"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fiB-J9-3qO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="2rI-sV-jbY"/>
+                    <constraint firstItem="fiB-J9-3qO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gh7-l7-mdO"/>
+                    <constraint firstItem="5P4-Qm-NXl" firstAttribute="centerY" secondItem="yZD-GS-W68" secondAttribute="centerY" id="PYV-fK-zWs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fiB-J9-3qO" secondAttribute="trailing" constant="20" id="SqD-8h-4f1"/>
+                    <constraint firstItem="yZD-GS-W68" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="ZE7-gZ-yTK"/>
+                    <constraint firstItem="5P4-Qm-NXl" firstAttribute="centerY" secondItem="fiB-J9-3qO" secondAttribute="centerY" id="aQw-1w-E8r"/>
+                    <constraint firstItem="5P4-Qm-NXl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="ahk-2c-q1Q"/>
+                    <constraint firstItem="5P4-Qm-NXl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="bIf-aL-HyN"/>
+                    <constraint firstItem="yZD-GS-W68" firstAttribute="baseline" secondItem="fiB-J9-3qO" secondAttribute="firstBaseline" id="caD-zc-grf"/>
+                    <constraint firstItem="fiB-J9-3qO" firstAttribute="leading" secondItem="yZD-GS-W68" secondAttribute="trailing" constant="5" id="x72-oJ-8HN"/>
+                    <constraint firstItem="yZD-GS-W68" firstAttribute="leading" secondItem="5P4-Qm-NXl" secondAttribute="trailing" constant="15" id="xBx-34-4hi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="scanLogin" destination="fiB-J9-3qO" id="BOg-Zz-sYN"/>
+                <outlet property="userNameIv" destination="5P4-Qm-NXl" id="BUQ-1o-cq5"/>
+                <outlet property="usernameTextField" destination="yZD-GS-W68" id="pmh-1C-oPG"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="scan" width="40" height="36"/>
+        <image name="username" width="22" height="30"/>
+    </resources>
+</document>

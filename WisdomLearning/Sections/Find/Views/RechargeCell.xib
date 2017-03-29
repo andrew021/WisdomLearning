@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="202" id="KGk-i7-Jjw" customClass="RechargeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学币余额: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlh-k1-lcy">
+                        <rect key="frame" x="15" y="10" width="305" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="hLg-CB-pJa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.605914022" green="0.605914022" blue="0.605914022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Im-Qd-BCf">
+                        <rect key="frame" x="15" y="40" width="93" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="a7h-fJ-oQf"/>
+                        </constraints>
+                        <state key="normal" title="50学币"/>
+                        <connections>
+                            <action selector="clickBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vci-Ii-GKG"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M35-h2-Xob">
+                        <rect key="frame" x="113" y="40" width="94" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="PbE-kQ-t9b"/>
+                        </constraints>
+                        <state key="normal" title="100学币"/>
+                        <connections>
+                            <action selector="clickBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VDC-gt-Ksj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPu-dn-66B">
+                        <rect key="frame" x="212" y="40" width="93" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="uP6-bJ-2gx"/>
+                        </constraints>
+                        <state key="normal" title="200学币"/>
+                        <connections>
+                            <action selector="clickBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MWW-6e-eqo"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="500" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-9X-bhV">
+                        <rect key="frame" x="15" y="80" width="93" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="TUd-us-6Io"/>
+                        </constraints>
+                        <state key="normal" title="500学币"/>
+                        <connections>
+                            <action selector="clickBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ofO-wb-IKa"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAd-ec-zM7">
+                        <rect key="frame" x="113" y="80" width="94" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="HNx-Jw-Cci"/>
+                        </constraints>
+                        <state key="normal" title="1000学币"/>
+                        <connections>
+                            <action selector="clickBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HGW-UC-HTh"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8I-Xk-5t0">
+                        <rect key="frame" x="212" y="80" width="93" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="aqd-ZH-fMO"/>
+                        </constraints>
+                        <state key="normal" title="其他数额"/>
+                        <connections>
+                            <action selector="clickBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f1W-eu-CVS"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总需支付：50元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QML-Az-2uP">
+                        <rect key="frame" x="15" y="130" width="109" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="321-8U-YlZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(提示：1 学币 = 1 元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFv-iW-cuQ">
+                        <rect key="frame" x="134" y="130" width="131" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Z7l-sa-4Nj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.605914022" green="0.605914022" blue="0.605914022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kIv-a1-LN2">
+                        <rect key="frame" x="212" y="80" width="93" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vlh-k1-lcy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="33y-qx-Rg0"/>
+                    <constraint firstItem="kIv-a1-LN2" firstAttribute="height" secondItem="J8I-Xk-5t0" secondAttribute="height" id="4U5-M6-JsY"/>
+                    <constraint firstItem="pAd-ec-zM7" firstAttribute="top" secondItem="M35-h2-Xob" secondAttribute="bottom" constant="5" id="6SO-Vs-SPe"/>
+                    <constraint firstItem="sPu-dn-66B" firstAttribute="top" secondItem="Vlh-k1-lcy" secondAttribute="bottom" constant="10" id="7LM-rS-gc2"/>
+                    <constraint firstItem="J8I-Xk-5t0" firstAttribute="width" secondItem="ehK-9X-bhV" secondAttribute="width" id="7qW-aO-dxq"/>
+                    <constraint firstItem="kIv-a1-LN2" firstAttribute="trailing" secondItem="J8I-Xk-5t0" secondAttribute="trailing" id="95m-8N-zQU"/>
+                    <constraint firstItem="aFv-iW-cuQ" firstAttribute="top" secondItem="pAd-ec-zM7" secondAttribute="bottom" constant="15" id="9se-bt-Imf"/>
+                    <constraint firstItem="M35-h2-Xob" firstAttribute="width" secondItem="4Im-Qd-BCf" secondAttribute="width" id="9vC-wj-knb"/>
+                    <constraint firstItem="ehK-9X-bhV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EAv-P2-zuJ"/>
+                    <constraint firstItem="Vlh-k1-lcy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Fi6-5P-Yuq"/>
+                    <constraint firstAttribute="trailing" secondItem="J8I-Xk-5t0" secondAttribute="trailing" constant="15" id="G7V-4t-qrS"/>
+                    <constraint firstAttribute="trailing" secondItem="Vlh-k1-lcy" secondAttribute="trailing" id="HQ8-nT-cuW"/>
+                    <constraint firstItem="M35-h2-Xob" firstAttribute="leading" secondItem="4Im-Qd-BCf" secondAttribute="trailing" constant="5" id="JYr-lW-1Wb"/>
+                    <constraint firstItem="sPu-dn-66B" firstAttribute="leading" secondItem="M35-h2-Xob" secondAttribute="trailing" constant="5" id="Kle-o5-sv9"/>
+                    <constraint firstItem="ehK-9X-bhV" firstAttribute="top" secondItem="4Im-Qd-BCf" secondAttribute="bottom" constant="5" id="McH-RD-9du"/>
+                    <constraint firstItem="kIv-a1-LN2" firstAttribute="leading" secondItem="J8I-Xk-5t0" secondAttribute="leading" id="SYv-HR-VIZ"/>
+                    <constraint firstItem="kIv-a1-LN2" firstAttribute="top" secondItem="aFv-iW-cuQ" secondAttribute="bottom" constant="3" id="ZH0-yt-eNq"/>
+                    <constraint firstItem="kIv-a1-LN2" firstAttribute="width" secondItem="J8I-Xk-5t0" secondAttribute="width" id="ZtS-js-VB1"/>
+                    <constraint firstItem="4Im-Qd-BCf" firstAttribute="top" secondItem="Vlh-k1-lcy" secondAttribute="bottom" constant="10" id="dqM-Vh-5H9"/>
+                    <constraint firstItem="J8I-Xk-5t0" firstAttribute="leading" secondItem="pAd-ec-zM7" secondAttribute="trailing" constant="5" id="e2o-bq-DCP"/>
+                    <constraint firstItem="4Im-Qd-BCf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fLc-nN-EB9"/>
+                    <constraint firstItem="sPu-dn-66B" firstAttribute="width" secondItem="4Im-Qd-BCf" secondAttribute="width" id="hKa-cy-JVf"/>
+                    <constraint firstAttribute="trailing" secondItem="sPu-dn-66B" secondAttribute="trailing" constant="15" id="pXT-kX-sFI"/>
+                    <constraint firstItem="QML-Az-2uP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="pkA-yD-FjI"/>
+                    <constraint firstItem="kIv-a1-LN2" firstAttribute="top" secondItem="J8I-Xk-5t0" secondAttribute="top" id="qMi-9e-hvq"/>
+                    <constraint firstItem="QML-Az-2uP" firstAttribute="top" secondItem="ehK-9X-bhV" secondAttribute="bottom" constant="15" id="qUu-3T-Wjr"/>
+                    <constraint firstItem="J8I-Xk-5t0" firstAttribute="top" secondItem="sPu-dn-66B" secondAttribute="bottom" constant="5" id="rJW-JB-E6Z"/>
+                    <constraint firstItem="aFv-iW-cuQ" firstAttribute="leading" secondItem="QML-Az-2uP" secondAttribute="trailing" constant="10" id="rht-0M-Y5b"/>
+                    <constraint firstItem="pAd-ec-zM7" firstAttribute="leading" secondItem="ehK-9X-bhV" secondAttribute="trailing" constant="5" id="tzc-0j-fvF"/>
+                    <constraint firstItem="pAd-ec-zM7" firstAttribute="width" secondItem="ehK-9X-bhV" secondAttribute="width" id="ubP-jQ-ofd"/>
+                    <constraint firstItem="M35-h2-Xob" firstAttribute="top" secondItem="Vlh-k1-lcy" secondAttribute="bottom" constant="10" id="y1v-YJ-tUZ"/>
+                    <constraint firstAttribute="trailing" secondItem="aFv-iW-cuQ" secondAttribute="trailing" constant="10" id="ybP-W0-u8w"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ybP-W0-u8w"/>
+                        <exclude reference="95m-8N-zQU"/>
+                        <exclude reference="ZH0-yt-eNq"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn1" destination="4Im-Qd-BCf" id="ZlY-nT-XU6"/>
+                <outlet property="btn2" destination="M35-h2-Xob" id="3SV-LZ-Gh1"/>
+                <outlet property="btn3" destination="sPu-dn-66B" id="pVn-UP-uf9"/>
+                <outlet property="btn4" destination="ehK-9X-bhV" id="Occ-87-dLv"/>
+                <outlet property="btn5" destination="pAd-ec-zM7" id="F1R-Mk-gQI"/>
+                <outlet property="coinRuleLabel" destination="aFv-iW-cuQ" id="Q3K-th-FDG"/>
+                <outlet property="moneyPayLabel" destination="QML-Az-2uP" id="9cq-iB-yW0"/>
+                <outlet property="nunLabel" destination="Vlh-k1-lcy" id="G4m-q7-ABm"/>
+                <outlet property="otherNumBtn" destination="J8I-Xk-5t0" id="lgb-mP-wbB"/>
+                <outlet property="otherNumTf" destination="kIv-a1-LN2" id="shV-dc-NDA"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="273"/>
+        </tableViewCell>
+    </objects>
+</document>

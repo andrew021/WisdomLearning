@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoListCollectionCell" id="gTV-IL-0wX" customClass="VideoListCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01-图表任你差遣dddd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-be-i7x">
+                        <rect key="frame" x="5" y="11" width="136" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TAU-wA-SJn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始学习" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCX-vY-q2z">
+                        <rect key="frame" x="250" y="12" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="ZKm-Cb-MGs"/>
+                            <constraint firstAttribute="height" constant="20" id="bzq-k1-0pr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fci-3E-Pva" customClass="LDProgressView">
+                        <rect key="frame" x="146" y="16" width="64" height="12"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Zai-iP-pvm"/>
+                            <constraint firstAttribute="width" constant="90" id="skF-58-Poz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="skF-58-Poz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-bA-H1p">
+                        <rect key="frame" x="210" y="12" width="35" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NRo-DW-U4i"/>
+                            <constraint firstAttribute="width" constant="35" id="c24-J9-d2j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="6fv-be-i7x" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="1CA-gi-cqJ"/>
+                <constraint firstItem="fci-3E-Pva" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Gum-jt-IjX"/>
+                <constraint firstItem="fci-3E-Pva" firstAttribute="leading" secondItem="6fv-be-i7x" secondAttribute="trailing" constant="5" id="H2E-2R-gaW"/>
+                <constraint firstAttribute="trailing" secondItem="dCX-vY-q2z" secondAttribute="trailing" constant="10" id="O5n-VU-9VG"/>
+                <constraint firstItem="Yg9-bA-H1p" firstAttribute="leading" secondItem="fci-3E-Pva" secondAttribute="trailing" id="PQB-pi-BIB"/>
+                <constraint firstItem="dCX-vY-q2z" firstAttribute="leading" secondItem="Yg9-bA-H1p" secondAttribute="trailing" constant="5" id="SMt-FB-WK4"/>
+                <constraint firstItem="6fv-be-i7x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="U0x-qz-oJa"/>
+                <constraint firstItem="dCX-vY-q2z" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Vi2-lW-OY7"/>
+                <constraint firstItem="fci-3E-Pva" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.2" id="dxt-xQ-KKI"/>
+                <constraint firstItem="Yg9-bA-H1p" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="oYe-TL-lhU"/>
+            </constraints>
+            <connections>
+                <outlet property="chapterNameLabel" destination="6fv-be-i7x" id="L4j-Y7-idp"/>
+                <outlet property="percentLabel" destination="Yg9-bA-H1p" id="9q6-Ew-J3d"/>
+                <outlet property="progressView" destination="fci-3E-Pva" id="ZU0-9L-XFp"/>
+                <outlet property="statusLabel" destination="dCX-vY-q2z" id="7iR-qd-x0R"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

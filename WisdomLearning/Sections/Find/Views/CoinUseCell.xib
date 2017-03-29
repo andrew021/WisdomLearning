@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoinUseCell" id="KGk-i7-Jjw" customClass="CoinUseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcc-NO-0EY">
+                        <rect key="frame" x="18" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0tW-iy-uNR"/>
+                            <constraint firstAttribute="width" constant="20" id="XWe-zb-6Ep"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="gary_select"/>
+                        <connections>
+                            <action selector="clickSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qgC-ON-JXd"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的可用学币为0个" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mr-nc-rP1">
+                        <rect key="frame" x="48" y="13" width="130" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FHJ-oG-toy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FHJ-oG-toy"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNj-wD-xRW">
+                        <rect key="frame" x="310" y="22" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5mr-nc-rP1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="H8x-xS-YhH"/>
+                    <constraint firstItem="SNj-wD-xRW" firstAttribute="leading" secondItem="5mr-nc-rP1" secondAttribute="trailing" constant="5" id="HVB-Gw-Tnc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5mr-nc-rP1" secondAttribute="trailing" constant="10" id="Ug2-G0-uae"/>
+                    <constraint firstItem="Rcc-NO-0EY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="aEc-Nh-Hh3"/>
+                    <constraint firstItem="SNj-wD-xRW" firstAttribute="centerY" secondItem="5mr-nc-rP1" secondAttribute="centerY" id="fPb-HL-e73"/>
+                    <constraint firstItem="5mr-nc-rP1" firstAttribute="leading" secondItem="Rcc-NO-0EY" secondAttribute="trailing" constant="10" id="gyJ-cG-a6M"/>
+                    <constraint firstAttribute="trailing" secondItem="SNj-wD-xRW" secondAttribute="trailing" constant="10" id="iVK-sZ-ujA"/>
+                    <constraint firstItem="Rcc-NO-0EY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rcr-3J-ibR"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ug2-G0-uae"/>
+                        <exclude reference="HVB-Gw-Tnc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coinLabel" destination="5mr-nc-rP1" id="Ved-Id-FsD"/>
+                <outlet property="coninruleLabel" destination="SNj-wD-xRW" id="XY7-dm-3Hp"/>
+                <outlet property="selectButton" destination="Rcc-NO-0EY" id="8IZ-FB-xla"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gary_select" width="40" height="40"/>
+    </resources>
+</document>

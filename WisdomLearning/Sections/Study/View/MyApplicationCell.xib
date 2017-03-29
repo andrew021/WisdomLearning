@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myApplicationCell" rowHeight="44" id="KGk-i7-Jjw" customClass="MyApplicationCell">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_picture" translatesAutoresizingMaskIntoConstraints="NO" id="Jz6-rN-3DV">
+                        <rect key="frame" x="10" y="10" width="119" height="79"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Jz6-rN-3DV" secondAttribute="height" multiplier="1.5:1" id="WZG-EB-OT5"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PET-eY-k9m">
+                        <rect key="frame" x="139" y="59" width="60" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="M4Y-VR-wMC"/>
+                            <constraint firstAttribute="height" constant="30" id="xpG-7y-nGO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="自学课程"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUP-KY-LT4">
+                        <rect key="frame" x="229" y="59" width="60" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="1UL-0v-VOj"/>
+                            <constraint firstAttribute="height" constant="30" id="LA5-RP-olk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="培训"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡市学生网络竞赛" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWE-Lj-ddm">
+                        <rect key="frame" x="139" y="10" width="252" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1gC-NP-PYm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1gC-NP-PYm"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zUP-KY-LT4" firstAttribute="leading" secondItem="PET-eY-k9m" secondAttribute="trailing" constant="30" id="CAa-m4-rwP"/>
+                    <constraint firstAttribute="bottom" secondItem="PET-eY-k9m" secondAttribute="bottom" constant="10" id="DNe-Gv-cPF"/>
+                    <constraint firstItem="ZWE-Lj-ddm" firstAttribute="leading" secondItem="Jz6-rN-3DV" secondAttribute="trailing" constant="10" id="FoG-56-xzd"/>
+                    <constraint firstItem="Jz6-rN-3DV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GlE-gJ-rRb"/>
+                    <constraint firstItem="zUP-KY-LT4" firstAttribute="top" secondItem="ZWE-Lj-ddm" secondAttribute="bottom" constant="10" id="LJ2-re-bSJ"/>
+                    <constraint firstItem="PET-eY-k9m" firstAttribute="leading" secondItem="Jz6-rN-3DV" secondAttribute="trailing" constant="10" id="S4H-jQ-N9e"/>
+                    <constraint firstItem="ZWE-Lj-ddm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="S8p-Fm-cu2"/>
+                    <constraint firstAttribute="trailing" secondItem="ZWE-Lj-ddm" secondAttribute="trailing" constant="10" id="Sef-iP-gCo"/>
+                    <constraint firstItem="Jz6-rN-3DV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jFC-Ej-zfa"/>
+                    <constraint firstAttribute="bottom" secondItem="Jz6-rN-3DV" secondAttribute="bottom" constant="10" id="lM5-D3-0bd"/>
+                    <constraint firstAttribute="bottom" secondItem="zUP-KY-LT4" secondAttribute="bottom" constant="10" id="t6y-5w-vvY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="courseBtn" destination="PET-eY-k9m" id="Aes-yy-LhX"/>
+                <outlet property="headerImage" destination="Jz6-rN-3DV" id="JJq-xf-zxd"/>
+                <outlet property="titleLabel" destination="ZWE-Lj-ddm" id="nIv-zK-Ksa"/>
+                <outlet property="trainBtn" destination="zUP-KY-LT4" id="RGO-Tb-vUM"/>
+            </connections>
+            <point key="canvasLocation" x="380.5" y="364"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="no_picture" width="90" height="60"/>
+    </resources>
+</document>
