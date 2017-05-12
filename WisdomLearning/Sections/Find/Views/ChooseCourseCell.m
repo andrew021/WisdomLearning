@@ -21,6 +21,12 @@
     _progressView.animate = @NO;
     _progressView.showText = @0;
     _progressView.color = kMainThemeColor;
+    if ([coinShow isEqualToString:@"on"]) {
+        _coursePrice.hidden = NO;
+    }else{
+        _coursePrice.hidden = YES;
+    }
+    
     
     _images = @[@"rate0",@"rate1",@"rate2",@"rate3",@"rate4",@"rate5",];
     // Initialization code
@@ -36,11 +42,14 @@
     _curriculum = curriculum;
     [self.courseIcon sd_setImageWithURL:[curriculum.courseIcon stringToUrl] placeholderImage:kPlaceDefautImage];
     self.courseName.text = curriculum.courseName;
-    if (curriculum.coursePrice == 0) {
-        self.coursePrice.text = @"免费";
-    }else{
-        self.coursePrice.text = [NSString stringWithFormat:@"%g%@",curriculum.coursePrice, priceunit];
+    if (_coursePrice.hidden != YES) {
+        if (curriculum.coursePrice == 0) {
+            self.coursePrice.text = @"免费";
+        }else{
+            self.coursePrice.text = [NSString stringWithFormat:@"%g%@",curriculum.coursePrice, priceunit];
+        }
     }
+    
     
     if (curriculum.learnNum != nil) {
         self.learnNum.text = [curriculum.learnNum add:@"人选课"];

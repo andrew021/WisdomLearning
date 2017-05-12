@@ -69,6 +69,7 @@ NSString *priceunit = @"";   //价格单位
 NSString *resunit = @"";  //学分  学时
 NSString *coin = @"";  //学币
 NSArray *payPaths;
+NSString *coinShow = @"";
 
 
 @interface AppDelegate ()
@@ -226,6 +227,8 @@ didFinishLaunchingWithOptions:launchOptions
                     resunit = value;
                 }else if ([code isEqualToString:@"coin"]){
                     coin = value;
+                }else if ([code isEqualToString:@"coinShow"]){
+                    coinShow = value;
                 }
             }
             

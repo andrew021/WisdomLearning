@@ -23,6 +23,7 @@ extern float coinrule;
 extern NSInteger studysaveinterval;
 extern NSArray *payPaths;
 extern NSString *coin;
+extern NSString *coinShow;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, EMChatManagerDelegate, EMContactManagerDelegate, EMGroupManagerDelegate>
 

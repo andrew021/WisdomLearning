@@ -31,6 +31,12 @@
     self.chooseCourseButton.layer.cornerRadius = 5;
     
     [self.chooseCourseButton setBackgroundColor:kMainThemeColor];
+    
+    if ([coinShow isEqualToString:@"on"]) {
+        _coursePriceLabel.hidden = NO;
+    }else{
+        _coursePriceLabel.hidden = YES;
+    }
 }
 
 
@@ -49,13 +55,16 @@
         _purchaseButton.enabled = NO;
         _chooseCourseButton.hidden = YES;
         
-        if (courseDetail.coursePrice != 0){
-            _coursePriceLabel.hidden = NO;
-            NSString *couresePrice = [NSString stringWithFormat:@"%g%@",courseDetail.coursePrice, priceunit];
-            _coursePriceLabel.attributedText = [couresePrice takeString:priceunit toColor:[UIColor colorWithHexString:@"ff8902"] isBefore:YES];
-        }else{
-            _coursePriceLabel.hidden = YES;
+        if (_coursePriceLabel.hidden == NO) {
+            if (courseDetail.coursePrice != 0){
+                _coursePriceLabel.hidden = NO;
+                NSString *couresePrice = [NSString stringWithFormat:@"%g%@",courseDetail.coursePrice, priceunit];
+                _coursePriceLabel.attributedText = [couresePrice takeString:priceunit toColor:[UIColor colorWithHexString:@"ff8902"] isBefore:YES];
+            }else{
+                _coursePriceLabel.hidden = YES;
+            }
         }
+        
         
     }else{  //如果没有选课
         if (courseDetail.coursePrice == 0) {  //课程价格免费，则直接选课
@@ -66,11 +75,11 @@
             _chooseCourseButton.hidden = NO;
             _chooseCourseButton.enabled = YES;
         }else{
-            _coursePriceLabel.hidden = NO;
-            NSString *couresePrice = [NSString stringWithFormat:@"%g%@",courseDetail.coursePrice, priceunit];
-            _coursePriceLabel.attributedText = [couresePrice takeString:priceunit toColor:[UIColor colorWithHexString:@"ff8902"] isBefore:YES];
-            
-            
+            if (_coursePriceLabel.hidden == NO) {
+                _coursePriceLabel.hidden = NO;
+                NSString *couresePrice = [NSString stringWithFormat:@"%g%@",courseDetail.coursePrice, priceunit];
+                _coursePriceLabel.attributedText = [couresePrice takeString:priceunit toColor:[UIColor colorWithHexString:@"ff8902"] isBefore:YES];
+            }
             _purchaseButton.hidden = NO;
             _purchaseButton.enabled = YES;
             
